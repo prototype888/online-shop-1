@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keranjang</title>
+    <link rel="stylesheet" href="style-keranjang.css" />
+    <!-- font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,800;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- cdn bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header1">
+        <div class="con-header1">
+          <a href="#">Download Aplikasi</a>
+          <ul>
+            <li><a href="">Mulai Berjalan</a></li>
+            <li><a href="">Tentang Kami</a></li>
+            <li><a href="">Bantuan</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header2">
+        <div class="con-header2">
+          <a href="index.html" class="logoh">LOGO</a>
+          <div class="dropdown-nav">
+            <p class="p1-header2" onclick="navdropdown(event)">Kategori</p>
+            <ul class="ul-dropnav">
+              <li><a href="item.html">Sepatu Sport</a></li>
+              <li><a href="item.html">Sepatu Casual</a></li>
+              <li><a href="item.html">Sepatu Pria</a></li>
+              <li><a href="item.html">Sepatu Wanita</a></li>
+              <li><a href="item.html">Sepatu Anak</a></li>
+            </ul>
+          </div>
+          <div class="search-header2">
+            <input
+              class="input-header2"
+              type="search"
+              name=""
+              id=""
+              placeholder="Iphone"
+            />
+            <i class="bi bi-search search-icon-header2"></i>
+          </div>
+          <div class="con-i-nav">
+            <div class="con-i-nav1-rel">
+              <i
+                class="bi bi-bell con-i-nav1"
+                onclick="navdropdownie1(event)"
+              ></i>
+              <div class="dropdown-navi1">
+                <ul>
+                  <li class="judul-navi1">Notifikasi</li>
+                  <li class="judul-navi2">Tidak ada Notifikasi</li>
+                </ul>
+              </div>
+            </div>
+            <div class="con-i-nav1-rel">
+              <i
+                class="bi bi-chat-left con-i-nav1"
+                onclick="navdropdownie2(event)"
+              ></i>
+              <div class="dropdown-navi2">
+                <ul>
+                  <li class="judul-navi21">Pesan</li>
+                  <li class="judul-navi22">Tidak ada Pesan</li>
+                </ul>
+              </div>
+            </div>
+            <a href="keranjang.html">
+              <i class="bi bi-bag bag-header2 con-i-nav1"></i>
+            </a>
+          </div>
+          <div class="con-masuk-daftar-login">
+            <a class="daftar-header2" href="daftar.html">Daftar</a>
+            <a class="masuk-header2" href="login.html">Masuk</a>
+          </div>
+          <div class="nav-bag-menu">
+            <div class="con-i-nav-2">
+              <div class="con-i-nav1-rel">
+                <i
+                  class="bi bi-bell con-i-nav1"
+                  onclick="navdropdownie1(event)"
+                ></i>
+                <div class="dropdown-navi1">
+                  <ul>
+                    <li class="judul-navi1">Notifikasi</li>
+                    <li class="judul-navi2">Tidak ada Notifikasi</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="con-i-nav1-rel">
+                <i
+                  class="bi bi-chat-left con-i-nav1"
+                  onclick="navdropdownie2(event)"
+                ></i>
+                <div class="dropdown-navi2">
+                  <ul>
+                    <li class="judul-navi21">Pesan</li>
+                    <li class="judul-navi22">Tidak ada Pesan</li>
+                  </ul>
+                </div>
+              </div>
+              <a href="keranjang.html">
+                <i class="bi bi-bag bag-header2 con-i-nav1"></i>
+              </a>
+            </div>
+            <i class="bi bi-menu-button-wide icon-menu"></i>
+          </div>
+        </div>
+        <div class="dropdown">
+          <i class="bi bi-x-lg close-x"></i>
+          <a href="login.html" class="list-dropdown">Masuk</a>
+          <a href="daftar.html" class="list-dropdown">Daftar</a>
+          <p class="clicked-kategory">
+            Kategory <i class="bi bi-caret-down-fill"></i>
+          </p>
+          <div class="dropdow-kategory">
+            <a href="item.html">Sepatu Sport</a>
+            <a href="item.html">Sepatu Casual</a>
+            <a href="item.html">Sepatu Pria</a>
+            <a href="item.html">Sepatu Wanita</a>
+            <a href="item.html">Sepatu Anak</a>
+          </div>
+          <div class="search-header2-dropdown">
+            <input
+              class="input-header2-dropdown"
+              type="search"
+              name=""
+              id=""
+              placeholder="Iphone"
+            />
+            <i class="bi bi-search search-icon-header2-dropdown"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main">
+        <p class="p1-main">Keranjang</p>
+        <div class="con-main">
+          <div class="main1">
+            <div class="con-main1">
+              <p>Anda memiliki 1 barang</p>
+              <img src="img/sepatu1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="main2">
+            <div class="con-main2">
+              <p class="p1-main2">Adidas</p>
+              <p class="p2-main2">Adizero Boston</p>
+              <p class="p3-main2">Rp. 100.000.000</p>
+              <p class="p4-main2">Warna : Tosca</p>
+              <p class="p5-main2">Ukuran : 43</p>
+              <p class="p6-main2">Jumlah : 2 Picis</p>
+              <p class="p7-main2">Metode Pembayaran : COD</p>
+              <p class="p8-main2">Layanan Pengiriman : JNE - Reguler</p>
+              <p class="p9-main2">Alamat Pembeli : Jalan Kaki</p>
+            </div>
+          </div>
+          <div class="main3">
+            <div class="con-main3">
+              <div class="con-kotak-vocer">
+                <input type="text" placeholder="Masukkan Kode Voucher" />
+                <button type="submit">PAKAI</button>
+              </div>
+              <p class="p-judul-main3">Detail Pesanan</p>
+              <div class="con-p1-main3">
+                <p class="isi1-p1-main3">Subtotal</p>
+                <p class="isi2-p1-main3">Rp 1.800.000</p>
+              </div>
+              <div class="con-p2-main3">
+                <p class="isi1-p2-main3">Voucher Diskon</p>
+                <p class="isi2-p2-main3">Tidak Tersedia</p>
+              </div>
+              <div class="con-p3-main3">
+                <p class="isi1-p3-main3">Ongkos Kirim</p>
+                <p class="isi2-p3-main3">Rp 12.500</p>
+              </div>
+              <div class="con-p4-main3">
+                <p class="isi1-p4-main3">Metode Pembayaran</p>
+                <p class="isi2-p4-main3">Cash On Delivery</p>
+              </div>
+              <div class="con-p5-main3">
+                <p class="isi1-p5-main3">Total</p>
+                <p class="isi2-p5-main3">Rp 1.812.500</p>
+              </div>
+              <button class="button-main3" type="submit">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <header>
+      <div class="header4">
+        <div class="con-header4">
+          <div class="header41">
+            <p>Layanan Pelanggan</p>
+            <ul>
+              <li><a href="">Pusat Bantuan</a></li>
+              <li><a href="">Cara Pembelian</a></li>
+              <li><a href="">Pengiriman</a></li>
+              <li><a href="">Kebijakan Produk Internasional</a></li>
+              <li><a href="">Cara Pengembalian</a></li>
+            </ul>
+          </div>
+          <div class="header42">
+            <p>Info Toko</p>
+            <ul>
+              <li><a href="">Semua Kategori</a></li>
+              <li><a href="">Tentang Toko</a></li>
+              <li><a href="">Karir</a></li>
+              <li><a href="">Syarat dan Ketentuan</a></li>
+              <li><a href="">Kebijakan Privasi</a></li>
+            </ul>
+          </div>
+          <div class="header43">
+            <p>Metode Pembayaran</p>
+            <div class="con-header43">
+              <a href=""><img src="img/bri.png" alt="" /></a>
+              <a href=""><img src="img/bni.png" alt="" /></a>
+              <a href=""><img src="img/bca.png" alt="" /></a>
+              <a href=""><img src="img/cimb niaga.png" alt="" /></a>
+              <a href=""><img src="img/mandiri.png" alt="" /></a>
+              <a href=""><img src="img/permatabank.png" alt="" /></a>
+              <a href=""><img src="img/visa.png" alt="" /></a>
+              <a href=""><img src="img/alfamart.png" alt="" /></a>
+              <a href=""><img src="img/alfamidi.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header5">
+        <div class="con-header5">
+          <div class="header51">
+            <p>Jasa Pengiriman</p>
+            <div class="con-header51">
+              <a href=""><img src="img/jne.png" alt="" /></a>
+              <a href=""><img src="img/ninja xpress.png" alt="" /></a>
+              <a href=""><img src="img/j&t express.png" alt="" /></a>
+              <a href=""><img src="img/sicepat.png" alt="" /></a>
+              <a href=""><img src="img/anteraja.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="header52">
+            <p>Ikuti Kami</p>
+            <ul>
+              <li>
+                <a href=""><i class="bi bi-facebook"></i> Facebook</a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-instagram"></i> Instagram</a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-youtube"></i> Youtube</a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-linkedin"></i> Linkedin</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header53">
+            <div class="con-header53">
+              <p>Download Aplikasi</p>
+              <a href=""><img src="img/pngegg.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var iconMenu = document.querySelector(".icon-menu");
+        var dropdown = document.querySelector(".dropdown");
+        var closeX = document.querySelector(".close-x");
+        var clickedKategory = document.querySelector(".clicked-kategory");
+        var dropdownKategory = document.querySelector(".dropdow-kategory");
+
+        var isKategoryDropdownVisible = false;
+
+        iconMenu.addEventListener("click", function () {
+          dropdown.style.display = "flex";
+        });
+
+        document.addEventListener("click", function (event) {
+          if (!dropdown.contains(event.target) && event.target !== iconMenu) {
+            dropdown.style.display = "none";
+          }
+        });
+
+        closeX.addEventListener("click", function () {
+          dropdown.style.display = "none";
+        });
+
+        clickedKategory.addEventListener("click", function () {
+          isKategoryDropdownVisible = !isKategoryDropdownVisible;
+
+          if (isKategoryDropdownVisible) {
+            dropdownKategory.style.display = "flex";
+          } else {
+            dropdownKategory.style.display = "none";
+          }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var navi = document.querySelectorAll(".con-i-nav1");
+
+        navi.forEach(function (item) {
+          item.addEventListener("click", function (event) {
+            event.stopPropagation();
+            var dropdown = this.nextElementSibling;
+            toggleDropdown(dropdown);
+          });
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener("click", function (event) {
+          var dropdowns = document.querySelectorAll(
+            ".dropdown-navi1, .dropdown-navi2"
+          );
+          dropdowns.forEach(function (dropdown) {
+            dropdown.style.display = "none";
+          });
+        });
+
+        // Function to toggle dropdown
+        function toggleDropdown(dropdown) {
+          var allDropdowns = document.querySelectorAll(
+            ".dropdown-navi1, .dropdown-navi2"
+          );
+          allDropdowns.forEach(function (dropdown) {
+            dropdown.style.display = "none";
+          });
+
+          if (dropdown.style.display === "flex") {
+            dropdown.style.display = "none";
+          } else {
+            dropdown.style.display = "flex";
+          }
+        }
+      });
+
+      var navdropdown2 = document.querySelector(".ul-dropnav");
+
+      function navdropdown(event) {
+        event.stopPropagation();
+
+        if (navdropdown2.style.display === "block") {
+          navdropdown2.style.display = "none";
+        } else {
+          navdropdown2.style.display = "block";
+        }
+      }
+
+      window.addEventListener("click", function () {
+        navdropdown2.style.display = "none";
+      });
+
+      navdropdown2.addEventListener("click", navdropdown);
+    </script>
+  </body>
+</html>
